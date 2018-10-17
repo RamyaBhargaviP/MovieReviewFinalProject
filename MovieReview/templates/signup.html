@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap4 %}
+{% include "header.html" %}
+
+<head>
+     <meta charset="UTF-8">
+    <title>MovieReview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{#    <link rel="stylesheet" href="{% static "css/header.css" %}"/>#}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+
+        body{
+          background-color: snow;
+        }
+        body,input{
+            font-family: 'Ubuntu', sans-serif;
+            letter-spacing: 0.0800em;
+        }
+
+        label{
+            display: none;
+        }
+        ul{
+            display: none;
+        }
+    </style>
+</head>
+
+
+
+
+<body style="background-color: snow">
+<div class="container masthead text-center">
+    <div class="row-1">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto" style="padding:30px 0;">
+            <div class="card card-login p-2">
+                <div class="card-body">
+                    <form role="form" method="post">
+                        {% csrf_token %}
+                        {% bootstrap_form form %}
+                        <input type="submit" name="commit" value="SignUp" tabindex="3" class="btn btn-secondary btn-block" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+
+
+
+

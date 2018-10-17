@@ -1,0 +1,10 @@
+h1{
+    margin-top:1%;
+    margin-bottom:1%;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+body {
+    background-image: url("https://image.shutterstock.com/z/stock-photo-closeup-happy-friends-using-a-smartphone-1154397832.jpg");
+    z-index: -2;
+}
